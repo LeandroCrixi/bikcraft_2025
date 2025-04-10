@@ -9,6 +9,11 @@
 /* Home */
 @import './home/intro.css';
 @import './home/tech.css';
+@import './home/partners.css';
+@import './home/testimony.css';
 
 /* Bikes */
-@import './bikes/bikes-list.css'
+@import './bikes/bikes-list.css';
+
+/* insurance */
+@import './insurance/insurance.css';
