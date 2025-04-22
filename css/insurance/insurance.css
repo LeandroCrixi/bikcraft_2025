@@ -61,7 +61,7 @@
     grid-column: 1/-1;
 }
 
-@media(max-wodth: 800px){
+@media(max-width: 800px){
     .insurance{
         grid-template-columns: 1fr;
     }
