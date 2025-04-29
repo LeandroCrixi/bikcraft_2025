@@ -19,6 +19,8 @@
 
 /* insurance */
 @import './insurance/insurance.css';
+@import './insurance/advantages.css';
+@import './insurance/faq.css';
 
 /* terms */
 @import './terms/terms.css'
