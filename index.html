@@ -7,6 +7,7 @@
     <title>Bikcraft - Electric Bicycles</title>
     <meta name="description" content="High-precision, high-quality electric bikes, tailor-made 
     for the customer. Explore the world at your own speed with Bikcraft.">
+    <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +20,7 @@
 <body>
     <header class="header-bg">
         <div class="header container">
-            <a href="./"><img src="./img/bikcraft.svg" alt="Bikcraft"></a>
+            <a href="./"><img src="./img/bikcraft.svg" width="136" height="32" alt="Bikcraft"></a>
             <nav aria-label="primary">
                 <ul class="header-menu font-1-m color-0">
                     <li><a href="../bikes.html">Bicycles</a></li>
@@ -38,9 +39,10 @@
                     Explore the world at your own speed with Bikcraft.</p>
                 <a class="button" href="">Choose Yours</a>
             </div>
-            <div class="intro-image">
-                <img src="./img/pics/introducao.jpg" alt="Black electric bike">
-            </div>
+            <picture class="intro-image">
+                <source media="(max-width: 800px)" srcset="./img/bikes/nimbus.jpg">
+                <img src="./img/pics/introducao.jpg" width="1280" height="1600" alt="Black electric bike">
+            </picture>
         </div>
     </main>
 
