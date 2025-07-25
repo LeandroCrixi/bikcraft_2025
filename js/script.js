@@ -55,3 +55,8 @@ const galeryEvents = (img) =>{
 }
 
 galery.forEach(galeryEvents)
+
+// Animation
+if(window.SimpleAnime){
+    new SimpleAnime()
+}

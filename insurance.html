@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insurance | Bikcraft</title>
     <meta name="description" content="Insurance.">
+    <link rel="shortcut icon" href="./img/icons/eletrica.svg" type="image/svg+xml">
     <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
 
@@ -14,6 +15,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body id="insurance">
@@ -39,7 +41,7 @@
         </div>
 
         <div class="insurance container">
-            <div class="insurance-item">
+            <div class="insurance-item fadeInLeft" data-anime="200">
                 <h3 class="font-1-xl color-6">SILVER</h3>
                 <span class="font-1-xl color-0">$ 199 <span class="font-1-xs color-6">monthly</span></span>
                 <ul class="font-2-m color-0">
@@ -51,7 +53,7 @@
                 <a class="button secondary" href="./quote.html?type=insurance&product=silver">Subscribe</a>
             </div>
 
-            <div class="insurance-item">
+            <div class="insurance-item fadeInRight" data-anime="400">
                 <h3 class="font-1-xl color-p1">GOLD</h3>
                 <span class="font-1-xl color-0">$ 299 <span class="font-1-xs color-6">monthly</span></span>
                 <ul class="font-2-m color-0">
@@ -112,28 +114,43 @@
 
         <dl>
             <div>
-                <dt><button class="font-1-m-b" aria-controls="faq1" aria-expanded="true">What forms of payment do you accept?</button></dt>
-                <dd id="faq1" class="font-2-s color-9 active">We accept payments via credit and debit cards (Visa, Mastercard, Amex), PayPal, and bank transfer.</dd>
+                <dt><button class="font-1-m-b" aria-controls="faq1" aria-expanded="true">What forms of payment do you
+                        accept?</button></dt>
+                <dd id="faq1" class="font-2-s color-9 active">We accept payments via credit and debit cards (Visa,
+                    Mastercard, Amex), PayPal, and bank transfer.</dd>
             </div>
             <div>
-                <dt><button class="font-1-m-b" aria-controls="faq2" aria-expanded="false">How can I get in touch?</button></dt>
-                <dd id="faq2" class="font-2-s color-9">You can contact us anytime by email at bikcraft@email.com or through our contact form on the website. We're happy to help!</dd>
+                <dt><button class="font-1-m-b" aria-controls="faq2" aria-expanded="false">How can I get in
+                        touch?</button></dt>
+                <dd id="faq2" class="font-2-s color-9">You can contact us anytime by email at bikcraft@email.com or
+                    through our contact form on the website. We're happy to help!</dd>
             </div>
             <div>
-                <dt><button class="font-1-m-b" aria-controls="faq3" aria-expanded="false">Do you have any discounts?</button></dt>
-                <dd id="faq3" class="font-2-s color-9">Yes! We offer seasonal promotions, referral discounts, and special rates for returning customers. Follow us on social media or subscribe to our newsletter to stay updated.</dd>
+                <dt><button class="font-1-m-b" aria-controls="faq3" aria-expanded="false">Do you have any
+                        discounts?</button></dt>
+                <dd id="faq3" class="font-2-s color-9">Yes! We offer seasonal promotions, referral discounts, and
+                    special rates for returning customers. Follow us on social media or subscribe to our newsletter to
+                    stay updated.</dd>
             </div>
             <div>
-                <dt><button class="font-1-m-b" aria-controls="faq4" aria-expanded="false">What guarantee do I have?</button></dt>
-                <dd id="faq4" class="font-2-s color-9">We stand by the quality of our work/products. If you're not satisfied, we’ll work with you to make it right. Depending on the service or product, we offer satisfaction guarantees or a return/refund policy — feel free to ask us for details.</dd>
+                <dt><button class="font-1-m-b" aria-controls="faq4" aria-expanded="false">What guarantee do I
+                        have?</button></dt>
+                <dd id="faq4" class="font-2-s color-9">We stand by the quality of our work/products. If you're not
+                    satisfied, we’ll work with you to make it right. Depending on the service or product, we offer
+                    satisfaction guarantees or a return/refund policy — feel free to ask us for details.</dd>
             </div>
             <div>
-                <dt><button class="font-1-m-b" aria-controls="faq5" aria-expanded="false">Can I pay in installments on the bill?</button></dt>
-                <dd id="faq5" class="font-2-s color-9">Yes, installment payments are available for select services or higher-value purchases. Get in touch and we’ll be happy to find a plan that works for you.</dd>
+                <dt><button class="font-1-m-b" aria-controls="faq5" aria-expanded="false">Can I pay in installments on
+                        the bill?</button></dt>
+                <dd id="faq5" class="font-2-s color-9">Yes, installment payments are available for select services or
+                    higher-value purchases. Get in touch and we’ll be happy to find a plan that works for you.</dd>
             </div>
             <div>
-                <dt><button class="font-1-m-b" aria-controls="faq6" aria-expanded="false">How many exchanges can I make per year?</button></dt>
-                <dd id="faq6" class="font-2-s color-9">You’re entitled to up to two exchanges per year (within 30 days of purchase) on eligible items or services. Just make sure the original is in good condition and let us know the reason for the exchange.</dd>
+                <dt><button class="font-1-m-b" aria-controls="faq6" aria-expanded="false">How many exchanges can I make
+                        per year?</button></dt>
+                <dd id="faq6" class="font-2-s color-9">You’re entitled to up to two exchanges per year (within 30 days
+                    of purchase) on eligible items or services. Just make sure the original is in good condition and let
+                    us know the reason for the exchange.</dd>
             </div>
         </dl>
     </article>
@@ -175,7 +192,7 @@
             <p class="footer-copy font-2-m color-6">Bikcraft @ Some rights reserved.</p>
         </div>
     </footer>
-
+    <script src="./js/plugins/simple-anime.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

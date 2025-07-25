@@ -7,6 +7,8 @@
     <title>Bikcraft - Electric Bicycles</title>
     <meta name="description" content="High-precision, high-quality electric bikes, tailor-made 
     for the customer. Explore the world at your own speed with Bikcraft.">
+
+    <link rel="shortcut icon" href="./img/icons/eletrica.svg" type="image/svg+xml">
     <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
 
@@ -15,6 +17,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body>
@@ -34,12 +38,14 @@
     <main class="intro-bg">
         <div class="intro container">
             <div class="intro-content">
-                <h1 class="font-1-xxl color-0">Custom made bikes<span class="color-p1">.</span></h1>
-                <p class="font-2-l color-5">High-precision, high-quality electric bikes, tailor-made for you.
+                <h1 class="font-1-xxl color-0 fadeInDown" data-anime="200">Custom made bikes<span
+                        class="color-p1">.</span></h1>
+                <p class="font-2-l color-5 fadeInDown" data-anime="400">High-precision, high-quality electric bikes,
+                    tailor-made for you.
                     Explore the world at your own speed with Bikcraft.</p>
-                <a class="button" href="">Choose Yours</a>
+                <a class="button fadeInDown" href="./bikes.html" data-anime="600">Choose Yours</a>
             </div>
-            <picture class="intro-image">
+            <picture class="intro-image fadeInDown" data-anime="800">
                 <source media="(max-width: 800px)" srcset="./img/bikes/nimbus.jpg">
                 <img src="./img/pics/introducao.jpg" width="1280" height="1600" alt="Black electric bike">
             </picture>
@@ -147,7 +153,7 @@
                     <li>Support 8am to 6pm</li>
                     <li>Statewide coverage</li>
                 </ul>
-                <a class="button secondary" href="./budget.html">Subscribe</a>
+                <a class="button secondary" href="./quote.html?type=insurance&product=silver">Subscribe</a>
             </div>
 
             <div class="insurance-item">
@@ -161,7 +167,7 @@
                     <li>Discounts with partners</li>
                     <li>Access to the Bikcraft Club</li>
                 </ul>
-                <a class="button" href="./budget.html">Subscribe</a>
+                <a class="button" href="./quote.html?type=insurance&product=gold">Subscribe</a>
             </div>
         </div>
     </article>
@@ -203,6 +209,7 @@
             <p class="footer-copy font-2-m color-6">Bikcraft @ Some rights reserved.</p>
         </div>
     </footer>
+    <script src="./js/plugins/simple-anime.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
